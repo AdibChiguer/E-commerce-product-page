@@ -1,0 +1,129 @@
+.cart_container {
+  position: absolute;
+  background-color: white;
+  top: 8rem;
+  right: 2rem;
+  border-radius: 20px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  z-index: 10;
+}
+
+.hr {
+  width: 100%;
+  background-color: var(--Grayish-blue);
+  height: 0.1px;
+}
+
+.cart_head {
+  padding: 2rem 1.5rem;
+}
+
+.cart_head h3{
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.cart_body-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+}
+
+.product-info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.product-title-price P {
+  color: black;
+  font-size: 17px;
+  line-height: 35px;
+}
+
+.product-title-price P span {
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.cart_body-info button {
+  padding: 1rem;
+  width: 88%;
+  margin-bottom: 2rem;
+  background-color: var(--Orange);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+}
+
+p {
+  color: var(--Grayish-blue);
+  text-transform: capitalize;
+}
+
+.empty_msgbox  {
+  padding: 6rem 7.5rem ;
+}
+
+.cart_body-info .product-info button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.svg-container svg {
+  scale: 1.3;
+  cursor: pointer;
+}
+
+@media (width <= 700px) {
+  .cart_container {
+    position: absolute;
+    background-color: white;
+    top: 8rem;
+    right: 4%;
+    width: 92%;
+    border-radius: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+}
+
+@media (width <= 500px) {
+  .cart_container {
+    top: 6rem;
+  }
+  .product-info {
+    padding: 2rem 0.5rem;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .product-title-price P {
+    font-size: 15px;
+    line-height: 35px;
+  }
+  .cart_body-info button {
+    width: 94%;
+  }
+  .cart_head {
+    padding: 2rem 1rem;
+  }
+  .empty_msgbox  {
+    padding: 6rem 5.5rem ;
+  }
+}

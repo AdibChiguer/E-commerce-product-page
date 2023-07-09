@@ -1,0 +1,12 @@
+[
+  {
+    "id":1,
+    "title": "Fall Limited Edition Sneakers",
+    "photoCollection" : [
+      { "img": "/img/image-product-1.jpg", "indx": 1 , "miniImg" : "/img/image-product-1-thumbnail.jpg" },
+      { "img": "/img/image-product-2.jpg", "indx": 2 , "miniImg" : "/img/image-product-2-thumbnail.jpg" },
+      { "img": "/img/image-product-3.jpg", "indx": 3 , "miniImg" : "/img/image-product-3-thumbnail.jpg" },
+      { "img": "/img/image-product-4.jpg", "indx": 4 , "miniImg" : "/img/image-product-4-thumbnail.jpg" }
+    ]
+  }
+]

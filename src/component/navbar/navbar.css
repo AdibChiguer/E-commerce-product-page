@@ -1,0 +1,172 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0rem 8rem;
+  padding: 2rem 0rem; 
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.navbar_container-logo-links  , .navbar_container-shopCard-userPhoto{
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.menu-svg {
+  display: none;
+}
+
+.logo svg {
+  width : 138px ;
+  height : 20px;
+  scale: 1.3;
+  margin-left: 1rem;
+}
+
+.navbar_container-shopCard-userPhoto{
+  gap: 3rem;
+}
+
+.navbar_container-logo-links ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar_container-logo-links ul li a {
+  color: var(--Dark-grayish-blue);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar_container-logo-links ul li {
+  width: 100%;
+  position: relative;
+}
+
+.navbar_container-logo-links ul li::after {
+  content: '';
+  position: absolute;
+  bottom: -4rem;
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: var(--Orange);
+  transition:  width 0.3s;
+  margin-top: 5px ;
+}
+
+.navbar_container-logo-links ul li:hover::after {
+  width: 100%;
+}
+
+.navbar_container-logo-links ul li:hover a {
+  color: var(--Very-dark-blue);
+}
+
+.navbar_container-shopCard-userPhoto button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar_container-shopCard-userPhoto button:hover svg path {
+  fill: var(--Very-dark-blue);
+}
+
+.navbar_container-shopCard-userPhoto button span {
+  background-color: var(--Orange);
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  z-index: 111;
+  font-weight: bold;
+}
+
+
+.navbar_container-shopCard-userPhoto button svg {
+  scale: 1.5;
+}
+
+.userPhoto-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.userPhoto-box:hover {
+  outline: 3px solid var(--Orange);
+}
+
+.userPhoto-box img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+@media (width <= 1250px) {
+  .navbar_container {
+    margin: 0rem 5rem;
+  }
+  .navbar_container-logo-links{
+    gap: 3rem;
+  }
+  .navbar_container-shopCard-userPhoto{
+    gap: 2rem;
+  }
+}
+
+@media (width <= 1000px) {
+  .navbar_container {
+    margin: 0rem 2rem;
+  }
+  .navbar_container-logo-links ul{
+    display: none;
+  }
+  .menu-svg {
+    display: block;
+    scale: 1.2;
+    cursor: pointer;
+  }
+  .menu-svg svg path {
+    fill: black;
+  }
+}
+
+@media (width <= 500px) {
+  .navbar_container-logo-links{
+    gap: 1rem;
+  }
+  .navbar_container-shopCard-userPhoto{
+    gap: 1rem;
+  }
+  .userPhoto-box {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar_container {
+    margin: 0rem ;
+    padding: 1rem 1.5rem; 
+    border-bottom: 1px solid var(--Grayish-blue);
+  }
+  .navbar_container-shopCard-userPhoto button svg {
+    scale: 1.2;
+  }
+  .userPhoto-box {
+    width: 30px;
+    height: 30px;
+  }
+  .logo svg {
+    scale: 1;
+    margin-left: 0rem;
+  }
+}

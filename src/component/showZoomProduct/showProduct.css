@@ -1,0 +1,106 @@
+.showProduct-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.774);
+  z-index: 11111;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding-top:2rem;
+}
+
+.blackbox {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+}
+
+.main-photo {
+  width: 600px;
+  height: 600px;
+  user-select: none;
+  position: relative;
+}
+
+.main-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.mini-photo {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.mini-img_container {
+  width: 20%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 111;
+}
+
+.mini-img_container img {
+  width: 100%;
+}
+
+.mini-img_container:hover {
+  opacity: 0.8;
+}
+
+
+.cl-btn {
+  position: absolute;
+  top: -2rem ;
+  right: 0 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cl-btn svg {
+  scale: 2;
+}
+
+.cl-btn svg path {
+  fill: white;
+}
+
+.cl-btn:hover svg path {
+  fill: var(--Orange);
+}
+
+.pr-btn , .ne-btn{
+  position: absolute;
+    top: 50% ;
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: translate(-50% , -50%);
+}
+
+.ne-btn {
+  right: 0;
+  transform: translate(50% , -50%);
+}
+
+.pr-btn svg , .ne-btn svg {
+  scale: 1.4;
+}
+
+.pr-btn:hover svg path , .ne-btn:hover svg path{
+  stroke: var(--Orange);
+}
