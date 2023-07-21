@@ -2,6 +2,7 @@ import React from 'react'
 import './cart.css'
 import { useShoppingCart } from '../../context/ShoppingCartProvider'
 import data from '../../data/data.json'
+import img1 from '../../images/image-product-1.jpg';
 
 
 const Cart = () => {
@@ -24,7 +25,7 @@ const Cart = () => {
         : 
         <>
           <div className="product-info">
-            <img src={item.photoCollection[0].miniImg} alt="" />
+            <img src={img1} alt="" />
             <div className="product-title-price">
               <p>{item.title}</p>
               <p>$125.00 x {cartItems[0].quantity} <span>${ 125 * cartItems[0].quantity}.00</span></p>
